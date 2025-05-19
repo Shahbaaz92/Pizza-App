@@ -1,16 +1,15 @@
 // import { useState } from 'react'
-import Pizza from "./components/Pizza";
+
+import Header from "./components/Header";
+import Menu from "./components/Menu";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <h1>Pizza Co.</h1>
-      <Pizza />
-      <Pizza />
-      <Pizza />
-      <Pizza />
-      <Pizza />
-      <Pizza />
+    <div className="container">
+      <Header />
+      <Menu />
+      <Footer />
     </div>
   );
 }
