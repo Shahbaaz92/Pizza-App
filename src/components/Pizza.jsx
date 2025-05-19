@@ -1,12 +1,14 @@
 // import { pizzaData } from "../data";
 
-function Pizza() {
+function Pizza({ name, ingredients, price, photoName }) {
   return (
     <article className="pizza">
-      <h3>Pizza Name</h3>
-      <p>Ingredients</p>
-      <p>Price</p>
-      <img src="pizzas/focaccia.jpg" alt="Focaccia " />
+      <img src={photoName} alt={name} />
+      <div>
+        <h3>{name}</h3>
+        <p>{ingredients}</p>
+        <p>{price}</p>
+      </div>
     </article>
   );
 }
