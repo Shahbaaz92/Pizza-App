@@ -2,12 +2,13 @@
 
 function Pizza({ name, ingredients, price, photoName, soldOut }) {
   return (
-    <li className={soldOut ? "pizza sold-out" : "pizza"} key={name}>
+    <li className={`pizza ${soldOut ? "sold-out" : ""}`} key={name}>
       <img src={photoName} alt={name} />
       <div>
         <h3>{name}</h3>
         <p>{ingredients}</p>
-        <p>{price}</p>
+
+        {soldOut ? <span>SOLD OUT</span> : <span>{price}</span>}
       </div>
     </li>
   );
