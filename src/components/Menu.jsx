@@ -20,6 +20,7 @@ function Menu() {
           />
         ))}
       </ul>
+      <button className="btn">Order</button>
     </main>
   );
 }
