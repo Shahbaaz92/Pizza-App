@@ -1,8 +1,8 @@
 // import { pizzaData } from "../data";
 
-function Pizza({ key, name, ingredients, price, photoName }) {
+function Pizza({ name, ingredients, price, photoName }) {
   return (
-    <li className="pizza" key={key}>
+    <li className="pizza" key={name}>
       <img src={photoName} alt={name} />
       <div>
         <h3>{name}</h3>
